@@ -6,6 +6,10 @@ span {
     font-weight:bold;
   }
 
+  hr {
+    width:80%;
+  }
+
 .borderradius {
     border-radius: 25px;
   }
