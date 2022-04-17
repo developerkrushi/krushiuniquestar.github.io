@@ -4,235 +4,121 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
     <!-- styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Krushivardhan Reddy</title>
   </head>
   <body>
 
     <!-- Navigation Bar -->
-    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-      <div class="container-fluid">
-        <p class="navbar-brand mb-0 h1">Krushivardhan Reddy</p>
+    <nav class="navbar navbar-expand-sm navbar-dark" style="background-color:black; color:white;">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border-color:black;"> 
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <!-- button for collapse -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- all the items under collapse -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#about">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="https://krushi.pythonanywhere.com/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="https://krushi.pythonanywhere.com/blog">Blog</a>
+          </li>
+        </ul>
       </div>
+
+<!--         <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+        </ul>  -->
     </nav>
 
+<!--     <header>
+      <div class="container text-center">
+        <p>
+          <a href="/blog">Blog</a>
+          <a href="/projects">Projects</a>
+          <a href="/">About</a>
+        </p>
+      </div>
+    
+    </header> -->
     <!-- body  -->
-    <div class="container mt-5 pt-3" id="about">
-      <div class="row pt-5">
-        <div class="col-md-4 d-flex justify-content-center align-items-center">
-          <div class="row">
-            <div class="col-12 d-flex justify-content-center align-items-center">
-              <img class="img-fluid rounded-circle" src="assets/img/me.PNG" alt="Krushivardhan Reddy" width="250" height="250">
-            </div>
-            <div class="col-12 text-center">
-              <h2>Krushivardhan Reddy</h2>
-            </div>
-            <div class="col-12 text-center">
-              <p style="color:#adb5bd;">Python Full Stack Web developer</p>
-            </div>
-            <!-- <div class="col-12 text-center fw-bold">
-              <p>Cognizant Technology Solutions</p>
-            </div> -->
-            <div class="list-group list-group-horizontal d-flex justify-content-center align-items-center">
-              <a href="https://linkedin.com/in/krushivardhan-reddy-b1b079104" class=" list-group-item bi bi-linkedin btn btn-dark" target="_blank"></a></li>
-              <a href="https://github.com/krushiuniquestar" class="list-group-item bi bi-github btn btn-dark" target="_blank"></a>
-              <a href="mailto:krushiuniquestar@gmail.com" class="list-group-item bi bi-envelope-fill btn btn-dark" target="_blank"></a>
-            </div>
+    <div class="container rounded-3" style="background-color:white;" id="aboutme">
+      <div class="row">
+        <div class="titlebar">
+          <div class="buttons">
+            <div class="close"></div>
+            <div class="minimize"></div>
+            <div class="zoom"></div>
           </div>
-        </div>
-
-        <!-- bio -->
-        <div class="col-md-8">
-          <div class="my-3 d-md-none"><hr class="m-auto" style="width:80%;"></div>
-          <h1>About me</h1>
-          <p>Hello, I'm currently working as a Software Developer(Full Stack Web Developer) at Cognizant Technology Solutions. I have a Bachelor's degree in Electronics and Communication engineering from Lovely Professional University.</p>
-          <p>Previously, I worked as a <span>Data Engineer(Informatica, Infoarchive, Pandas)</span> where I extract data from the databases, do analysis, design data sets, transform the data and build data applications. Then I developed interest in the Web Development and now working as a <span>Python Full Stack Web developer</span> with backend knowledge of <span>Django</span>, frond end knowledge of <span>HTML, CSS, Bootstrap</span> and <span>JavaScript.</span></p>
-          <p>Aside from work, I also like working on my personal projects and looking forward to publish them on GitHub.</p>
-          <a href="assets/doc/resume.pdf" target="_blank" class="bi bi-download btn btn-dark rounded-5"> Resume</a>
         </div>
       </div>
-    </div>
+    
 
-    <hr class="mx-auto my-5" style="width:80%;" id="skills">
-    <!-- skills -->
-    <div class="skills container my-5">
-      <h1>Skills</h1>
-
-      <div class="container borderradius p-5 bg-light">
-        <div class="row">
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/html.png" alt="HTML">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>HTML</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/css.png" alt="CSS">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>CSS</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/js.png" alt="JavaScript">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>JavaScript</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/python.png" alt="Python">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>Python</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/git.png" alt="Git">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>Git</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/docker.png" alt="docker">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>Docker</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/db.png" alt="Database">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>MySQL</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-3 col-md-3 col-6">
-            <div class="row">
-              <div class="col-12 d-flex justify-content-center align-items-center">
-                <img src="assets/icon/api.png" alt="API">
-              </div>
-              <div class="col-12 p-2 text-center">
-                <p>REST API</p>
-              </div>
-            </div>
-          </div>
-
+  <div class="row  px-5">
+    <div class="col-lg-6 mt-5"  id="intro">
+      <div class="row">
+        <strong style="font-family: 'Teko', sans-serif;font-size:300%;">Hi! I’m Krushi.<br>I’m a Python developer.</strong>
+        <div class="row pb-5" id="brief">
+          <strong>Software Engineer with over 4 years of professional experience in the IT industry. I have started using Python in 2019 and since then working as a web developer. I build backend modules for web apps. </strong>
+          <strong>I’m currently working as a python Developer at Deloitte India.</strong>
+        </div>
+        <div id="social-links">
+          <a href="/assets/doc/resume.pdf" target="_blank" class="bi bi-download btn btn-dark rounded-5"> Resume</a>
+          <!-- <br>
+          <br>
+          <strong>Contact me here</strong>
+          <a href="https://github.com/krushiuniquestar" target="_blank"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+          <a href="https://linkedin.com/in/sereddykrushi" target="_blank"> 
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+              </svg></a>
+          <a href="mailto:krushiuniquestar@gmail.com" target="_blank"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg></a> -->
+          
         </div>
       </div>
     </div>
-<!--     
-    <hr class="m-auto" style="width:80%;" id="projects">
-
-    Projects
-    <div class="container my-5">
-      <h1>Projects</h1>
-      <div class="container borderradius p-5 bg-light">
-        <div class="card borderradius" style="width: 18rem;">
-          <img class="card-img-top p-2" src="assets/img/weather.jpeg" alt="Weather Image">
-          <div class="card-body">
-            <h5 class="card-title">Weather App</h5>
-             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="html/weather.html" class="btn btn-dark" target="_self">View</a>
-          </div>
-        </div>
-      </div>
+    <div class="col-lg-6 d-none d-lg-block" id="mypic">
+      <img src="/assets/img/mypic.png" alt="Krushivardhan Reddy" width="550" height="499" id="mypic">
     </div>
-  -->
+  </div>
 
-    <hr class="m-auto" id="contact">
-
-    <!-- Contact -->
-    <div class="container my-5">
-      <h1>Contact</h1>
-      <div class="container borderradius p-5 bg-light">
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea name="message" rows="8" cols="80" class="form-control" id="message"></textarea>
-          </div>
-          <button type="submit" class="btn btn-dark">Send</button>
-        </form>
-      </div>
     </div>
 
 
 
     <!-- Footer -->
-    <footer class="bg-dark text-white-50">
-      <div class="text-center p-3">
-        Designed by <span>Krushivardhan Reddy</span> 2021
+    <footer>
+      <div class="text-center p-5">
+        <a href="https://github.com/krushiuniquestar" target="_blank"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>&nbsp;
+          <a href="https://linkedin.com/in/sereddykrushi" target="_blank"> 
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path fill="#ffffff" fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+              </svg></a>&nbsp;
+          <a href="mailto:krushiuniquestar@gmail.com" target="_blank"> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#ffffff" d="M12 12.713l-11.985-9.713h23.97l-11.985 9.713zm0 2.574l-12-9.725v15.438h24v-15.438l-12 9.725z"/></svg></a>
+        <br>
+        <br>
+        <p>© Krushivardhan Reddy 2022</p>
       </div>
     </footer>
 
@@ -241,3 +127,4 @@
     </script>
   </body>
 </html>
+
